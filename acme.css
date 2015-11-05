@@ -1,0 +1,111 @@
+/******************************************************************************* - GENERAL STUFF - ***/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  color: white;
+}
+/******************************************************************************* - BACKGROUND-LOGO- ***/
+#wallpaper {
+background-image: url("warehouse.jpg");
+z-index: -1;
+background-repeat: no-repeat;
+width: 100%;
+position: absolute;
+height: 1000px;
+}
+#logo {
+  height: 34px;
+  width: 90px;
+padding-left: 50%;
+}
+/******************************************************************************* - NAVIGATION BAR - ***/
+
+.menu {
+  display: inline-block;
+  padding-left: 10px;
+  /*z-index: 1px;*/
+
+}
+
+#bigContainer {
+  text-align: center;
+}
+
+
+#nav-container {
+  display: inline-block;
+  /*width: 100%;*/
+  text-align: center;
+
+
+}
+
+#navi-bar {
+display: inline-block;
+margin-top: 130px;
+z-index: 1px;
+font-family: Quicksand;
+}
+#ulPart2 {
+  float: right;
+  background-color: #ccc;
+  padding-bottom: 9px;
+  font-size: 15px;
+  /*padding: 18px;*/
+}
+ul {
+  display: inline-block;
+}
+
+li {
+  padding: 18px;
+}
+
+#magni-glass {
+  width: 17px;
+  height: 17px;
+}
+
+#ulPart1 {
+  background-color: #333;
+  /*padding: 18px;*/
+
+}
+
+
+
+/* ----------------------------------------------------------------- */
+
+.ON {
+  background-color: rgb(255, 190, 0);
+    border-bottom: 10px solid rgb(255, 190, 0);
+  }
+
+
+
+  .underline {
+    position: relative;
+    color: white;
+  }
+  .underline:after {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 0;
+    height: 10px;
+    background-color: rgb(255, 190, 0);
+    content: "";
+
+    transition: width 0.5s;
+  }
+  .underline:hover {
+    color: white;
+  }
+  .underline:hover:after {
+    border-bottom: 0px solid rgb(255, 190, 0);
+    width: 100%;
+  }
